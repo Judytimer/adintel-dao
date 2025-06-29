@@ -174,7 +174,7 @@ Storage           PostgreSQL          Smart Contract
 
 ### Current Implementation
 
-**Live Chrome Extension MVP**: [GitHub Repository](https://github.com/yourusername/adintel-dao)
+**Live Chrome Extension MVP**: [GitHub Repository](https://github.com/adintel-dao/adintel-dao)
 
 **Completed Features**:
 - ✅ Ad detection algorithm (Facebook, Google)
@@ -183,7 +183,7 @@ Storage           PostgreSQL          Smart Contract
 - ✅ Points/rewards system
 - ✅ User dashboard UI
 
-**Demo Video**: [Link to 2-minute demo]
+**Demo Video**: [2-minute demo walkthrough](https://github.com/adintel-dao/adintel-dao/blob/main/docs/demo.md)
 
 ### Technical Implementation
 
