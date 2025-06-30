@@ -2,7 +2,7 @@
 
 **Project**: AdIntel DAO – Decentralized Ad Intelligence Network  
 **Date**: June 29, 2025  
-**Team Lead**: Shuang Jin
+**Team Lead**: Judy Timer
 
 ---
 
@@ -16,10 +16,10 @@ AdIntel DAO transforms everyday browsing into collective market intelligence by 
 
 ## 3. Team Information
 
-**Team Lead**: Shuang Jin  
+**Team Lead**: Judy Timer  
 **Role**: Full-stack Developer & Project Lead  
-**Discord**: @shuangjin  
-**GitHub**: github.com/shuangjin  
+**Discord**: @JudyTimer  
+**GitHub**: github.com/Judytimer  
 **Experience**: 5+ years web development, Chrome extensions (50k+ users)
 
 Currently seeking co-founders in blockchain development and B2B marketing.
@@ -67,7 +67,7 @@ Small businesses spend $200-5000/month on ads but lack competitor insights. Curr
 
 ### ✅ Completed Chrome Extension MVP
 
-**GitHub**: [github.com/shuangjin/adintel-dao](https://github.com/shuangjin/adintel-dao)
+**GitHub**: [github.com/Judytimer/adintel-dao](https://github.com/Judytimer/adintel-dao)
 
 **Implemented Features**:
 - Ad detection (Facebook, Google)
@@ -134,6 +134,6 @@ No prior experience. Seeking mentorship on:
 
 ---
 
-**Contact**: shuang@adintel-dao.com | Discord: @shuangjin#1234
+**Contact**: yj821973181@gmail.com | Discord: @JudyTimer
 
 *Submitted for Vana Academy Week 4*

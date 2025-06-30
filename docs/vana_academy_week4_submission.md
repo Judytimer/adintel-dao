@@ -19,10 +19,10 @@ AdIntel DAO transforms everyday browsing into collective market intelligence by 
 
 ## 3. Team Information
 
-**Team Lead**: Shuang Jin
+**Team Lead**: Judy Timer
 - **Role**: Full-stack Developer & Project Lead
-- **Discord**: @shuangjin
-- **GitHub**: [github.com/shuangjin](https://github.com/shuangjin)
+- **Discord**: @JudyTimer
+- **GitHub**: [github.com/Judytimer](https://github.com/Judytimer)
 - **Experience**: 5+ years in web development, previously built e-commerce analytics tools
 
 **Team Structure**: Currently solo founder seeking technical co-founder and advisors in:
@@ -174,7 +174,7 @@ Storage           PostgreSQL          Smart Contract
 
 ### Current Implementation
 
-**Live Chrome Extension MVP**: [GitHub Repository](https://github.com/adintel-dao/adintel-dao)
+**Live Chrome Extension MVP**: [GitHub Repository](https://github.com/Judytimer/adintel-dao)
 
 **Completed Features**:
 - ✅ Ad detection algorithm (Facebook, Google)
@@ -183,7 +183,7 @@ Storage           PostgreSQL          Smart Contract
 - ✅ Points/rewards system
 - ✅ User dashboard UI
 
-**Demo Video**: [2-minute demo walkthrough](https://github.com/adintel-dao/adintel-dao/blob/main/docs/demo.md)
+**Demo Video**: [2-minute demo walkthrough](https://github.com/Judytimer/adintel-dao/blob/main/docs/demo.md)
 
 ### Technical Implementation
 
@@ -308,7 +308,7 @@ We're seeking mentorship on:
 
 ### E. Technical Architecture Diagram
 
-[Link to architecture diagram]
+[Technical Architecture](https://github.com/Judytimer/adintel-dao/blob/main/docs/architecture.md)
 
 ### F. Roadmap
 
@@ -331,15 +331,15 @@ We're seeking mentorship on:
 
 ## Contact Information
 
-**Primary Contact**: Shuang Jin  
-**Email**: shuang@adintel-dao.com  
-**Discord**: @shuangjin#1234  
-**Telegram**: @shuangjin_dao
+**Primary Contact**: Judy Timer  
+**Email**: yj821973181@gmail.com  
+**Discord**: @JudyTimer  
+**Telegram**: @judytimerremote
 
 **Project Links**:
-- GitHub: [github.com/adintel-dao](https://github.com/adintel-dao)
-- Website: [adintel-dao.com](https://adintel-dao.com)
-- Demo: [demo.adintel-dao.com](https://demo.adintel-dao.com)
+- GitHub: [github.com/Judytimer/adintel-dao](https://github.com/Judytimer/adintel-dao)
+- Live Demo: [GitHub Demo Documentation](https://github.com/Judytimer/adintel-dao/blob/main/docs/demo.md)
+- Technical Docs: [Project Documentation](https://github.com/Judytimer/adintel-dao/tree/main/docs)
 
 ---
 
