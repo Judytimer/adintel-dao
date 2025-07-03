@@ -13,73 +13,92 @@
 
 ## 2. One-Liner Description
 
-AdIntel DAO transforms everyday browsing into collective market intelligence by rewarding users for contributing public advertising data through a Chrome extension, providing small businesses with affordable competitive insights at 80% less cost than traditional tools while ensuring complete user privacy and legal compliance.
+AdIntel DAO transforms everyday browsing into collective market intelligence by rewarding users for contributing public advertising data through a Chrome extension. Unlike general-purpose data DAOs that collect broad browsing behavior, we focus exclusively on public advertising content to create actionable competitive intelligence, providing small businesses with affordable insights at 80% less cost than traditional tools while ensuring complete user privacy and legal compliance.
 
 ---
 
 ## 3. Team Information
 
-**Team Lead**: Judy Timer
-- **Role**: Full-stack Developer & Project Lead
-- **Discord**: @JudyTimer
+**Founder & Lead Developer**: Judy Timer
+- **Role**: Full-stack Developer, Product Manager, Community Lead
+- **Background**: 5+ years in web development, previously built e-commerce analytics tools
+- **Contact**: yj821973181@gmail.com | Discord: @JudyTimer
 - **GitHub**: [github.com/Judytimer](https://github.com/Judytimer)
-- **Experience**: 5+ years in web development, previously built e-commerce analytics tools
 
-**Team Structure**: Currently solo founder seeking technical co-founder and advisors in:
-- Blockchain/Web3 development (Vana integration)
-- Legal compliance for data collection
-- B2B SaaS marketing
+**Solo Founder Advantages**:
+- ✅ **Rapid Decision Making**: From idea to MVP in 24 hours without lengthy meetings
+- ✅ **High Focus**: 100% energy dedicated to product development and user feedback
+- ✅ **Flexible Iteration**: Quick pivots based on community feedback
+- ✅ **Cost Efficiency**: 100% of resources go to product development, not overhead
 
 **Relevant Experience**: 
 - Built Chrome extensions for productivity tools (50k+ users)
 - Developed data analytics platforms for SMBs
 - Experience with privacy-compliant data collection
+- Active security researcher (self-conducted security audit completed)
+
+**Advisory Support** (Planned):
+- Seeking legal advisor for data compliance
+- Seeking blockchain expert for Vana integration
+- Seeking marketing advisor for growth strategy
 
 ---
 
 ## 4. Problem Statement
 
-### Primary Problem
-Small and medium-sized businesses (SMBs) running online ads face a critical information asymmetry: they spend $200-5000/month on advertising but have no visibility into what their competitors are doing. This leads to:
-- Wasted ad spend on ineffective strategies
-- Creative fatigue from lack of inspiration
-- Inability to identify market trends
+### The Unjust Reality of Data Monopoly
 
-### Problem Context
+**Current Pain Points**:
+- 🔒 **Data Ownership Misalignment**: Facebook and Google generate hundreds of billions in annual revenue from advertising data, while users who create this data receive nothing in return
+- 📊 **Information Asymmetry**: Major platforms monopolize market insights, forcing small businesses to advertise blindly
+- 💸 **Price Barriers**: Professional ad intelligence tools (SpyFu, SEMrush) charge $150+ monthly, putting them out of reach for small businesses
+- 🚫 **Black Box Operations**: Opaque algorithms from ad platforms prevent advertisers from truly understanding the market
 
-**Scale**: 
+### The Core Market Inefficiency
+
+The advertising industry generates over $600 billion annually, yet the data that powers it is controlled by a handful of platforms. This creates a fundamental market inefficiency:
+
+1. **Advertisers** pay premium prices for limited insights
+2. **Users** generate valuable behavioral data but receive no compensation
+3. **Platforms** capture all the value while limiting data access
+
+**Scale of the Problem**:
 - 30M+ SMBs globally spend on digital advertising
-- Average SMB wastes 25-30% of ad budget on poor targeting/creative
-- $150B+ annual SMB digital ad spend market
-
-**Current Solutions Failures**:
-- **AdSpy/BigSpy**: $150-300/month - too expensive for SMBs
-- **Facebook Ad Library**: Free but lacks insights, difficult to navigate
-- **Manual Research**: Time-consuming (2-3 hours/day), incomplete data
-
-**Specific Pain Points** (validated through Reddit research):
-- "I spend 2 hours daily checking competitor ads manually" 
-- "Ad costs increased 300% but I don't know if it's just me"
-- "Need inspiration but spy tools cost more than my ad budget"
-
-### Data Ownership & Incentive Issues
-
-**Current System Problems**:
-1. **Data Monopoly**: Large platforms control all ad performance data
-2. **Zero User Rewards**: Users generate valuable attention data but receive nothing
-3. **Expensive Intelligence**: Market intelligence companies charge premium for aggregated public data
-
-**Misaligned Incentives**:
-- Users see ads → Platforms profit
-- Users research competitors → Spy tools profit  
-- Users get nothing despite creating all the value
+- Average SMB wastes 25-30% of ad budget due to information asymmetry
+- Users view 5,000+ ads daily but capture 0% of the value they create
 
 ### Why Now?
 
-1. **Ad Costs Crisis**: Facebook CPM increased 89% in 2 years
-2. **Chrome Extension Adoption**: 2.5B+ users comfortable with extensions
-3. **Web3 Awareness**: Users increasingly expect rewards for data contribution
-4. **Legal Precedent**: hiQ Labs v. LinkedIn established public data collection rights
+**1. Web3 Technology Maturity**
+- Vana network provides robust infrastructure for incentivizing data contributions
+- Decentralized storage costs have dropped significantly
+- Token economics have been proven viable at scale
+
+**2. Market Timing is Ripe**
+- Global economic downturn makes cost-effective marketing tools essential for small businesses
+- Privacy regulations (GDPR/CCPA) have awakened user consciousness about data ownership
+- AI boom has created explosive demand for quality training data
+
+**3. Technical Feasibility**
+- Chrome extension APIs are stable and powerful
+- Ad detection technology is mature (DOM-based analysis)
+- Blockchain gas fees have reached acceptable levels
+
+### Our Unique Solution
+
+**AdIntel DAO is not just another "ad tool" – it's a data democratization movement:**
+
+1. **Returning Power to the People**: Users contribute data, users earn rewards
+2. **Crowdsourced Intelligence**: The collective wisdom of 100,000 users surpasses any web scraper
+3. **Legally Compliant**: We only collect publicly displayed ads, with zero privacy risks
+4. **Inclusive Pricing**: $29/month makes professional market intelligence accessible to every small business
+
+AdIntel DAO breaks this monopoly by creating a three-sided marketplace where:
+- Users are rewarded for contributing public ad data
+- Advertisers get affordable, comprehensive market intelligence
+- The community owns and governs the data collectively
+
+This isn't just about building a better tool – it's about restructuring the fundamental economics of digital advertising data.
 
 ---
 

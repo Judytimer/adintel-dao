@@ -53,6 +53,6 @@ To test the current MVP:
 ## 📞 Contact
 
 For demo requests or technical questions:
-- Email: shuang@adintel-dao.com
-- Discord: @shuangjin
-- GitHub Issues: [adintel-dao/adintel-dao](https://github.com/adintel-dao/adintel-dao/issues) 
+- Email: yj821973181@gmail.com
+- Discord: @JudyTimer
+- GitHub Issues: [Judytimer/adintel-dao](https://github.com/Judytimer/adintel-dao) 

@@ -6,7 +6,9 @@
 
 ## 🚀 Overview
 
-AdIntel DAO transforms everyday browsing into collective market intelligence by rewarding users for contributing public advertising data through a Chrome extension. We provide small businesses with affordable competitive insights at 80% less cost than traditional tools while ensuring complete user privacy and legal compliance.
+AdIntel DAO transforms everyday browsing into collective market intelligence by rewarding users for contributing public advertising data through a Chrome extension. **Unlike general-purpose data DAOs that collect broad browsing behavior, we focus exclusively on public advertising content to create actionable competitive intelligence.** We provide small businesses with affordable competitive insights at 80% less cost than traditional tools while ensuring complete user privacy and legal compliance.
+
+**🎯 Our Unique Focus**: While other platforms collect general browsing data for AI training, AdIntel DAO specializes in **advertising intelligence** - helping SMBs understand competitor ad strategies, pricing, messaging, and market positioning through crowdsourced ad detection.
 
 ## 🎯 Key Features
 
