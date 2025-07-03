@@ -3,21 +3,21 @@
 # AdIntel DAO - PDF Conversion Script
 # Converts Vana Academy submission documents to PDF format
 
-echo "📄 AdIntel DAO - PDF转换工具"
+echo "📄 AdIntel DAO - PDF Conversion Tool"
 echo "================================"
 
-# 检查pandoc是否安装
+# Check if pandoc is installed
 if ! command -v pandoc &> /dev/null; then
-    echo "⚠️  Pandoc未安装，正在安装..."
+    echo "⚠️  Pandoc not installed, installing..."
     sudo apt update
     sudo apt install -y pandoc texlive-latex-base texlive-fonts-recommended texlive-latex-extra
 fi
 
-# 创建输出目录
+# Create output directory
 mkdir -p docs/pdf-exports
 
-# 转换主提交文档
-echo "🔄 转换Vana Academy提交文档..."
+# Convert main submission document
+echo "🔄 Converting Vana Academy submission document..."
 pandoc docs/vana_academy_week4_submission.md \
     -o docs/pdf-exports/AdIntel_DAO_Vana_Academy_Week4_Submission.pdf \
     --pdf-engine=pdflatex \
@@ -33,8 +33,8 @@ pandoc docs/vana_academy_week4_submission.md \
     --metadata author="Shuang Jin" \
     --metadata date="June 29, 2025"
 
-# 转换技术架构文档
-echo "🔄 转换技术架构文档..."
+# Convert technical architecture document
+echo "🔄 Converting technical architecture document..."
 pandoc docs/architecture.md \
     -o docs/pdf-exports/AdIntel_DAO_Technical_Architecture.pdf \
     --pdf-engine=pdflatex \
@@ -44,8 +44,8 @@ pandoc docs/architecture.md \
     --number-sections \
     --highlight-style=github
 
-# 合并所有文档为单一PDF（可选）
-echo "🔄 创建完整文档包..."
+# Merge all documents into single PDF (optional)
+echo "🔄 Creating complete documentation package..."
 pandoc docs/vana_academy_week4_submission.md docs/architecture.md docs/demo.md \
     -o docs/pdf-exports/AdIntel_DAO_Complete_Submission.pdf \
     --pdf-engine=pdflatex \
@@ -59,7 +59,7 @@ pandoc docs/vana_academy_week4_submission.md docs/architecture.md docs/demo.md \
     --metadata author="Shuang Jin" \
     --metadata date="June 29, 2025"
 
-echo "✅ PDF转换完成！"
-echo "📁 输出文件位置: docs/pdf-exports/"
-echo "📋 生成的PDF文件:"
+echo "✅ PDF conversion complete!"
+echo "📁 Output location: docs/pdf-exports/"
+echo "📋 Generated PDF files:"
 ls -la docs/pdf-exports/ 

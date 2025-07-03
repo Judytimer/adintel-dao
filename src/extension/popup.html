@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AdIntel DAO</title>
   <style>
     body {
-      width: 320px;
+      width: 400px;
+      min-height: 500px;
       margin: 0;
+      padding: 0;
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: #f5f5f5;
+      background: #f5f7fa;
+      color: #1a202c;
     }
     
     .header {
@@ -18,15 +22,15 @@
       text-align: center;
     }
     
-    .logo {
+    .header h1 {
+      margin: 0;
       font-size: 24px;
-      font-weight: bold;
-      margin-bottom: 8px;
+      font-weight: 600;
     }
     
     .balance {
-      font-size: 32px;
-      font-weight: bold;
+      font-size: 36px;
+      font-weight: 700;
       margin: 10px 0;
     }
     
@@ -35,61 +39,186 @@
       opacity: 0.8;
     }
     
-    .stats {
+    .stats-container {
       padding: 20px;
-      background: white;
     }
     
-    .stat-row {
+    .stat-card {
+      background: white;
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 16px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+    }
+    
+    .stat-header {
       display: flex;
       justify-content: space-between;
-      padding: 12px 0;
-      border-bottom: 1px solid #eee;
+      align-items: center;
+      margin-bottom: 12px;
     }
     
-    .stat-row:last-child {
-      border-bottom: none;
-    }
-    
-    .stat-label {
-      color: #666;
+    .stat-title {
       font-size: 14px;
+      color: #718096;
+      font-weight: 500;
     }
     
     .stat-value {
+      font-size: 24px;
       font-weight: 600;
-      color: #333;
+      color: #2d3748;
     }
     
     .progress-bar {
-      width: 100%;
       height: 8px;
-      background: #e0e0e0;
+      background: #e2e8f0;
       border-radius: 4px;
-      margin-top: 8px;
       overflow: hidden;
+      margin-top: 8px;
     }
     
     .progress-fill {
       height: 100%;
-      background: #4CAF50;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
       border-radius: 4px;
       transition: width 0.3s ease;
     }
     
-    .achievements {
-      padding: 20px;
+    .stats-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 16px;
+    }
+    
+    .mini-stat {
+      text-align: center;
+    }
+    
+    .mini-stat-value {
+      font-size: 20px;
+      font-weight: 600;
+      color: #2d3748;
+    }
+    
+    .mini-stat-label {
+      font-size: 12px;
+      color: #718096;
+      margin-top: 4px;
+    }
+    
+    .toggle-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       background: white;
-      margin-top: 10px;
+      border-radius: 12px;
+      padding: 16px;
+      margin: 0 20px 16px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+    }
+    
+    .toggle-label {
+      font-weight: 500;
+      color: #2d3748;
+    }
+    
+    .toggle-switch {
+      position: relative;
+      width: 48px;
+      height: 24px;
+    }
+    
+    .toggle-switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    
+    .toggle-slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #cbd5e0;
+      transition: .4s;
+      border-radius: 24px;
+    }
+    
+    .toggle-slider:before {
+      position: absolute;
+      content: "";
+      height: 16px;
+      width: 16px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      transition: .4s;
+      border-radius: 50%;
+    }
+    
+    input:checked + .toggle-slider {
+      background-color: #667eea;
+    }
+    
+    input:checked + .toggle-slider:before {
+      transform: translateX(24px);
+    }
+    
+    .actions {
+      display: flex;
+      gap: 8px;
+      padding: 0 20px 20px;
+    }
+    
+    .btn {
+      flex: 1;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    
+    .btn-primary {
+      background: #667eea;
+      color: white;
+    }
+    
+    .btn-primary:hover {
+      background: #5a67d8;
+    }
+    
+    .btn-secondary {
+      background: #e2e8f0;
+      color: #4a5568;
+    }
+    
+    .btn-secondary:hover {
+      background: #cbd5e0;
+    }
+    
+    .achievement-section {
+      margin-top: 16px;
     }
     
     .achievement {
       display: flex;
       align-items: center;
-      padding: 10px;
-      background: #f8f9fa;
+      padding: 12px;
+      margin-bottom: 8px;
+      background: #f7fafc;
       border-radius: 8px;
-      margin-bottom: 10px;
+      transition: all 0.2s;
+    }
+    
+    .achievement.unlocked {
+      background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
     }
     
     .achievement-icon {
@@ -102,133 +231,148 @@
     }
     
     .achievement-title {
-      font-weight: 600;
+      font-weight: 500;
+      color: #2d3748;
       font-size: 14px;
-      color: #333;
     }
     
-    .achievement-desc {
+    .achievement-description {
       font-size: 12px;
-      color: #666;
+      color: #718096;
       margin-top: 2px;
     }
     
-    .toggle-container {
-      padding: 20px;
-      background: white;
-      margin-top: 10px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    
-    .toggle-label {
-      font-size: 14px;
-      color: #333;
-    }
-    
-    .toggle {
-      position: relative;
-      width: 50px;
-      height: 26px;
-      background: #ccc;
-      border-radius: 13px;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-    
-    .toggle.active {
-      background: #4CAF50;
-    }
-    
-    .toggle-slider {
-      position: absolute;
-      top: 3px;
-      left: 3px;
-      width: 20px;
-      height: 20px;
-      background: white;
-      border-radius: 50%;
-      transition: transform 0.3s;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-    }
-    
-    .toggle.active .toggle-slider {
-      transform: translateX(24px);
-    }
-    
-    .footer {
-      padding: 16px;
-      text-align: center;
-      background: white;
-      margin-top: 10px;
-    }
-    
-    .footer a {
+    .achievement-points {
+      font-weight: 600;
       color: #667eea;
-      text-decoration: none;
       font-size: 14px;
     }
     
-    .loading {
-      text-align: center;
-      padding: 40px;
-      color: #666;
+    .chart-container {
+      height: 200px;
+      margin-top: 16px;
+      padding: 16px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.06);
     }
     
-    .error {
-      color: #f44336;
-      padding: 20px;
-      text-align: center;
+    .notification {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      padding: 12px 16px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      opacity: 0;
+      transform: translateY(-10px);
+      transition: all 0.3s;
+      z-index: 1000;
+    }
+    
+    .notification.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    .notification.success {
+      background: #48bb78;
+      color: white;
+    }
+    
+    .notification.error {
+      background: #f56565;
+      color: white;
+    }
+    
+    .extension-disabled {
+      opacity: 0.6;
+      pointer-events: none;
+    }
+    
+    .extension-disabled .toggle-container {
+      opacity: 1;
+      pointer-events: all;
     }
   </style>
 </head>
 <body>
   <div class="header">
-    <div class="logo">AdIntel DAO</div>
-    <div class="balance-label">Your Balance</div>
-    <div class="balance" id="balance">--</div>
-    <div class="balance-label">points</div>
-  </div>
-  
-  <div class="stats">
-    <h3 style="margin: 0 0 16px 0; font-size: 16px;">Today's Progress</h3>
-    
-    <div class="stat-row">
-      <span class="stat-label">Ads Contributed</span>
-      <span class="stat-value" id="today-ads">--</span>
-    </div>
-    
-    <div class="stat-row">
-      <span class="stat-label">Points Earned</span>
-      <span class="stat-value" id="today-points">--</span>
-    </div>
-    
-    <div class="stat-row">
-      <span class="stat-label">Daily Limit</span>
-      <span class="stat-value"><span id="ads-count">--</span>/50</span>
-    </div>
-    
-    <div class="progress-bar">
-      <div class="progress-fill" id="progress-fill"></div>
-    </div>
-  </div>
-  
-  <div class="achievements" id="achievements-container" style="display: none;">
-    <h3 style="margin: 0 0 16px 0; font-size: 16px;">Recent Achievements</h3>
-    <div id="achievements-list"></div>
+    <h1>AdIntel DAO</h1>
+    <div class="balance-label">Total Points</div>
+    <div class="balance" id="balance">0</div>
   </div>
   
   <div class="toggle-container">
-    <span class="toggle-label">Ad Detection</span>
-    <div class="toggle active" id="toggle">
-      <div class="toggle-slider"></div>
+    <label class="toggle-label">Extension Active</label>
+    <label class="toggle-switch">
+      <input type="checkbox" id="extension-toggle" checked>
+      <span class="toggle-slider"></span>
+    </label>
+  </div>
+  
+  <div class="stats-container">
+    <div class="stat-card">
+      <div class="stat-header">
+        <div class="stat-title">Today's Progress</div>
+        <div class="stat-value"><span id="today-ads">0</span>/50</div>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
+      </div>
+      <div class="stats-grid">
+        <div class="mini-stat">
+          <div class="mini-stat-value" id="today-points">0</div>
+          <div class="mini-stat-label">Points Today</div>
+        </div>
+        <div class="mini-stat">
+          <div class="mini-stat-value" id="daily-remaining">50</div>
+          <div class="mini-stat-label">Remaining</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="stat-card">
+      <div class="stat-header">
+        <div class="stat-title">Lifetime Stats</div>
+      </div>
+      <div class="stats-grid">
+        <div class="mini-stat">
+          <div class="mini-stat-value" id="total-ads">0</div>
+          <div class="mini-stat-label">Total Ads</div>
+        </div>
+        <div class="mini-stat">
+          <div class="mini-stat-value" id="total-points">0</div>
+          <div class="mini-stat-label">Total Points</div>
+        </div>
+        <div class="mini-stat">
+          <div class="mini-stat-value" id="current-streak">0</div>
+          <div class="mini-stat-label">Day Streak</div>
+        </div>
+        <div class="mini-stat">
+          <div class="mini-stat-value" id="achievements-count">0</div>
+          <div class="mini-stat-label">Achievements</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="chart-container">
+      <canvas id="stats-chart"></canvas>
+    </div>
+    
+    <div class="stat-card achievement-section">
+      <div class="stat-header">
+        <div class="stat-title">Achievements</div>
+      </div>
+      <div id="achievements-list"></div>
     </div>
   </div>
   
-  <div class="footer">
-    <a href="#" id="learn-more">Learn More</a> · 
-    <a href="#" id="privacy">Privacy</a>
+  <div class="actions">
+    <button class="btn btn-primary" id="export-btn">Export Data</button>
+    <button class="btn btn-secondary" id="settings-btn">Settings</button>
+    <button class="btn btn-secondary" id="help-btn">Help</button>
   </div>
   
   <script src="popup.js"></script>
