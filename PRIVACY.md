@@ -75,8 +75,8 @@ We will notify users of any material changes to this privacy policy through the 
 ## Contact
 
 For privacy concerns or questions:
-- GitHub Issues: https://github.com/adintel-dao/adintel-dao/issues
-- Email: privacy@adintel-dao.com
+- GitHub Issues: https://github.com/judytimer/adintel-dao
+- Email: yj821973181@gmail.com
 
 ## Compliance
 
