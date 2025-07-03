@@ -98,4 +98,4 @@ This extension uses NO third-party services that could access your data.
 ## Open Source
 
 Our code is open source, allowing anyone to verify our privacy claims:
-https://github.com/adintel-dao/adintel-dao
+https://github.com/judytimer/adintel-dao
